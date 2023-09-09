@@ -3,7 +3,7 @@ from django.http import JsonResponse
 from datetime import datetime
 
 # Create your views here.
-def user_details(request):
+def api(request):
     slack_name =request.GET.get("slack_name", "")
     track = request.GET.get("track", "")
 
@@ -15,9 +15,9 @@ def user_details(request):
     #response to be served
     response = {
         "slack_name": slack_name,
-        "track": track,
         "current_day": current_day,
         "utc_time": utc_time,
+        "track": track,
         "github_file_url": github_file_url,
         "github_repo_url": github_repo_url,
         "status_code": 200
