@@ -9,8 +9,8 @@ def user_details(request):
 
     current_day = datetime.now().strftime("%A")
     utc_time = datetime.utcnow().strftime("%Y -%m -%dT%H:%M:%SZ")
-    github_file_url = "https://github.com/comrade70/endpoint-test/blob/master/markdown.md"
-    github_repo_url = "https://github.com/comrade70/endpoint-test"
+    github_file_url = "https://github.com/comrade70/hngx-endpoint/blob/master/markdown.md"
+    github_repo_url = "https://github.com/comrade70/hngx-endpoint"
 
     #response to be served
     response = {
@@ -24,4 +24,3 @@ def user_details(request):
     }
 
     return JsonResponse(response)
-
