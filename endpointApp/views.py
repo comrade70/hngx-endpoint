@@ -9,7 +9,7 @@ def api(request):
 
     current_day = datetime.now().strftime("%A")
     utc_time = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
-    github_file_url = "https://github.com/comrade70/hngx-endpoint/blob/master/markdown.md"
+    github_file_url = "https://github.com/comrade70/hngx-endpoint/blob/master/manage.py"
     github_repo_url = "https://github.com/comrade70/hngx-endpoint"
 
     #response to be served
