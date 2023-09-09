@@ -8,7 +8,7 @@ def api(request):
     track = request.GET.get("track", "")
 
     current_day = datetime.now().strftime("%A")
-    utc_time = datetime.utcnow().strftime("%Y -%m -%dT%H:%M:%SZ")
+    utc_time = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
     github_file_url = "https://github.com/comrade70/hngx-endpoint/blob/master/markdown.md"
     github_repo_url = "https://github.com/comrade70/hngx-endpoint"
 
